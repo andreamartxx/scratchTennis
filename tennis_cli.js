@@ -1,10 +1,8 @@
-function printTennis(){
+function printTennis(prompt, console){
     
     const Tennis = require('./tennis');
 
     const tennis = new Tennis();
-
-    const prompt = require("prompt-sync")();
 
     do{
         players = prompt('Which player scores? ');
@@ -19,4 +17,4 @@ function printTennis(){
     }while(players != tennis.throwingErrorAfterWinning)
 }
 
-printTennis();
+module.exports = printTennis;
