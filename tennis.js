@@ -62,6 +62,11 @@ class Tennis{
         this.#playerTwo++;
     }
 
+    isGameOver(){
+        if (this.#playerOneWinsPlayerTwoLessThanForty() || this.#playerTwoWinsPlayerOneLessThanForty() || this.#playerOneWinsPlayerTwoForty() || this.#playerTwoWinsPlayerOneForty()) {
+            return true;
+        }
+    }
 
     #throwingErrorAfterWinning() {
         if (this.#playerOneWinsPlayerTwoLessThanForty() || this.#playerTwoWinsPlayerOneLessThanForty() || this.#playerOneWinsPlayerTwoForty() || this.#playerTwoWinsPlayerOneForty()) {
