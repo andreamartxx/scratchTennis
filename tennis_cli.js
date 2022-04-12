@@ -14,7 +14,7 @@ function printTennis(prompt, console){
             tennis.playerTwoScored();
             console.log(tennis.score());
         }
-    }while(players != tennis.throwingErrorAfterWinning)
+    }while(!tennis.isGameOver())
 }
 
 module.exports = printTennis;
