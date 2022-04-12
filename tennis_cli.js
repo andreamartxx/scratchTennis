@@ -1,7 +1,7 @@
+const Tennis = require('./tennis');
+
 function printTennis(prompt, console){
     
-    const Tennis = require('./tennis');
-
     const tennis = new Tennis();
 
     do{
