@@ -5,12 +5,12 @@ function printTennis(prompt, console){
     const tennis = new Tennis();
 
     do{
-        players = prompt('Which player scores? ');
+        userInput = prompt('Which player scores? ');
 
-        if(players == 1){
+        if(userInput == 1){
             tennis.playerOneScored();
             console.log(tennis.score());
-        }else if(players == 2){
+        }else if(userInput == 2){
             tennis.playerTwoScored();
             console.log(tennis.score());
         }
