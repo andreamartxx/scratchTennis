@@ -11,11 +11,13 @@ describe('cli tennis score kata', ()=>{
             .mockReturnValueOnce(1)
             .mockReturnValueOnce(1)
             .mockReturnValueOnce(1)
-            .mockReturnValue(1)
 
         printFunction(prompt, console);
         expect(prompt).toHaveBeenCalledWith('Which player scores? ');
         
-        expect(log).toHaveBeenCalled();
+        expect(log).toHaveBeenCalledWith('15 0');
+        expect(log).toHaveBeenCalledWith('30 0');
+        expect(log).toHaveBeenCalledWith('40 0');
+        expect(log).toHaveBeenCalledWith('win 0');
     });
 });
